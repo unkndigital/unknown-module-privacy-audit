@@ -1,0 +1,131 @@
+{
+  "id": "privacy-audit",
+  "version": "1.0.2",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "sha256": "572234ff94a780da9248b867a9c6d208b18b702864d847e1cb4a42bfc1b560f3",
+      "bytes": 51
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "351ba46fc3dfe9e631667f04fb7da305b8605bb1974d09f2a811e92239b856d2",
+      "bytes": 32
+    },
+    {
+      "path": "Build.cmd",
+      "sha256": "3e66bb628af029a43d740f9ab5c4553e5ec2e80b59aece1e4b2b41d1a86049a3",
+      "bytes": 255
+    },
+    {
+      "path": "Build.ps1",
+      "sha256": "e26686fca8abc6b28b6aa79e922e610ac6087dd36f3c8c36683082c83beebf55",
+      "bytes": 1656
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "ed18054c1e42887a48a91b06aceb534235e77bb6d756a0776384d361cff0dac2",
+      "bytes": 1103
+    },
+    {
+      "path": "MODULE.md",
+      "sha256": "d87570e3833504683c784ab2a2d16b305b11cfdd15c37476b3851514fcc52377",
+      "bytes": 2042
+    },
+    {
+      "path": "OWNER_USE.md",
+      "sha256": "998f709fec86aeccc2d2eefb72d1cd161b09bfea67557dd24d3429dac10fd7b6",
+      "bytes": 1297
+    },
+    {
+      "path": "README.md",
+      "sha256": "abde0ef2c1a62aa2178ef2cfdf928f3733861396e0e538b12ccf1bf4099d9f95",
+      "bytes": 2896
+    },
+    {
+      "path": "SECURITY.md",
+      "sha256": "a3e328ecf9269462d8df8c45d30d4934c184bdd14faf93c04446478946962532",
+      "bytes": 1024
+    },
+    {
+      "path": "SHA256SUMS.txt",
+      "sha256": "13b3621e2e0db13630e191e78a9127c2ccf745b94f677a757562c9429f1a1a2c",
+      "bytes": 90
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "sha256": "53c653b665d4a2071d673883d81628a452989c49f0681cdca108fcb9992458ac",
+      "bytes": 482
+    },
+    {
+      "path": "build-config.json",
+      "sha256": "919a0f3580646cd4d9812d59d4d01331713663ddbefb6e422c4bb11f14eaf27a",
+      "bytes": 1439
+    },
+    {
+      "path": "build.js",
+      "sha256": "608d61aaec5b0e23b66538b373afd7dfad68f40693ec015439d22e003576fc0d",
+      "bytes": 3848
+    },
+    {
+      "path": "module-archive.js",
+      "sha256": "07a177a6367921e7c71e5909735712c9e00b26e8f50d20955680e7ddcbfbed09",
+      "bytes": 14682
+    },
+    {
+      "path": "module-support.js",
+      "sha256": "61a3ce4965b535df79f0ff4ce0d0bcd76a88c7cc38fdb9f5c5c4385bacfd06d9",
+      "bytes": 3244
+    },
+    {
+      "path": "module.js",
+      "sha256": "7556f329336e0b3672d7e88bd3570823d728bbca303564177fd8495b84c18cda",
+      "bytes": 1800
+    },
+    {
+      "path": "module.json",
+      "sha256": "1080a415860c5c0289b0d00276a95f6bafff619c95b596f2b2ba400582d38ff9",
+      "bytes": 3611
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "76fb2864e8b024b0305cb7177a93e7de2cd90916a4c57fd4033b77253ffe50fe",
+      "bytes": 2225
+    },
+    {
+      "path": "package.json",
+      "sha256": "4bc30eb958a8dabbb75426642c06aeddc0d80cbc262468fd6be5ccaa7f67fc5d",
+      "bytes": 451
+    },
+    {
+      "path": "privacy-audit-1.0.2.zip",
+      "sha256": "91cd6e9e70d0efb7be6778900ed9c5c1e79b3fe81475337ca96ce042a555fe88",
+      "bytes": 25834
+    },
+    {
+      "path": "runtime/unknown-home-microphone.js",
+      "sha256": "c33fe29f1a98288de63ac3033f79d40d4d9417cdfd1deb9989daebaf5d54270f",
+      "bytes": 9317
+    },
+    {
+      "path": "runtime/unknown-home-network-audit.js",
+      "sha256": "ff6b0c074fe3aed41b16737ecb8912587989cc137757417dcd161873d122802c",
+      "bytes": 7797
+    },
+    {
+      "path": "runtime/unknown-home-privacy-audit.js",
+      "sha256": "9d9403c29771dce792406f708e75dfbd34033e6d3bfd2f7fa6f9875ddd93a88e",
+      "bytes": 6411
+    },
+    {
+      "path": "runtime/unknown-home-privacy-diagnostics.js",
+      "sha256": "cd8cf3c95ed84a2ad166a33ea3aad3f4c9c7053d9f90536983ddc9adffb0cd9e",
+      "bytes": 14486
+    },
+    {
+      "path": "runtime/unknown-home-privacy.js",
+      "sha256": "f35cf660dcb2a76f8a3719d19b23a61d15f71f17ce71912303a3fb4629080588",
+      "bytes": 17581
+    }
+  ]
+}

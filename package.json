@@ -1,0 +1,19 @@
+{
+  "name": "unknown-module-privacy-audit",
+  "version": "1.0.2",
+  "private": true,
+  "description": "On-TV process, microphone-device and network metadata inspection with an optional bounded local event log.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node build.js --check",
+    "build": "node build.js"
+  },
+  "devDependencies": {
+    "yauzl": "3.4.0",
+    "yazl": "3.3.1",
+    "acorn": "8.18.0"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "id": "privacy-audit",
+  "version": "1.0.2",
+  "coreVersion": "0.4.6",
+  "home": false,
+  "inputs": [
+    {
+      "source": "LICENSE",
+      "target": "LICENSE"
+    },
+    {
+      "source": "MODULE.md",
+      "target": "README.md"
+    },
+    {
+      "source": "module-support.js",
+      "target": "module-support.js"
+    },
+    {
+      "source": "module.js",
+      "target": "module.js"
+    },
+    {
+      "source": "module.json",
+      "target": "module.json"
+    },
+    {
+      "source": "runtime/unknown-home-microphone.js",
+      "target": "runtime/unknown-home-microphone.js"
+    },
+    {
+      "source": "runtime/unknown-home-network-audit.js",
+      "target": "runtime/unknown-home-network-audit.js"
+    },
+    {
+      "source": "runtime/unknown-home-privacy-audit.js",
+      "target": "runtime/unknown-home-privacy-audit.js"
+    },
+    {
+      "source": "runtime/unknown-home-privacy-diagnostics.js",
+      "target": "runtime/unknown-home-privacy-diagnostics.js"
+    },
+    {
+      "source": "runtime/unknown-home-privacy.js",
+      "target": "runtime/unknown-home-privacy.js"
+    }
+  ],
+  "sourceFiles": [
+    "LICENSE",
+    "MODULE.md",
+    "module-support.js",
+    "module.js",
+    "module.json",
+    "runtime/unknown-home-microphone.js",
+    "runtime/unknown-home-network-audit.js",
+    "runtime/unknown-home-privacy-audit.js",
+    "runtime/unknown-home-privacy-diagnostics.js",
+    "runtime/unknown-home-privacy.js"
+  ]
+}
