@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "id": "privacy-audit",
+  "version": "1.0.2",
+  "minCoreVersion": "0.4.6",
+  "title": "Privacy Audit",
+  "description": "On-TV process, microphone-device and network metadata inspection with an optional bounded local event log.",
+  "disableDescription": "Stops periodic audit sampling. Existing RAM log entries are kept until cleared or the TV reboots. Privacy and microphone blocks are controlled by their separate modules.",
+  "publisher": "Unknown Digital and Unknown Suite contributors",
+  "license": "MIT",
+  "requiresRoot": true,
+  "entry": "module.js",
+  "permissions": [
+    "Runs as root; declarations are not a sandbox",
+    "Reads /proc and device metadata; optionally samples changes about once per minute",
+    "Retains only the last 128 sampled events in RAM; does not record voice audio or packet contents"
+  ],
+  "actions": {
+    "status": {
+      "title": "View current status",
+      "description": "Shows whether periodic recording is enabled and explains its sampling and retention limits. This is not a live activity snapshot.",
+      "readOnly": true,
+      "parameters": {}
+    },
+    "health": {
+      "title": "Check module health",
+      "description": "Reports recording configuration and availability. Use live inspections to observe activity; this health result is not proof that blockers work or tracking is absent.",
+      "readOnly": true,
+      "parameters": {}
+    },
+    "maintenance": {
+      "title": "Reapply saved settings",
+      "description": "Takes one additional sample if recording is already enabled. It does not enable recording, add network blocks or change microphone access.",
+      "readOnly": false,
+      "parameters": {}
+    },
+    "inspect": {
+      "title": "Inspect live device state",
+      "readOnly": true,
+      "parameters": {},
+      "description": "Takes a current snapshot of known service processes, capture devices and available network metadata. Short-lived activity between snapshots can be missed."
+    },
+    "networkAudit": {
+      "title": "Inspect network and app indicators",
+      "readOnly": true,
+      "parameters": {},
+      "description": "Reads local connection and app indicators that may warrant investigation. It does not scan other devices or inspect packet contents; an indicator alone does not prove proxy abuse."
+    },
+    "setRecording": {
+      "title": "Apply audit recording",
+      "readOnly": false,
+      "parameters": {
+        "enabled": {
+          "type": "boolean",
+          "title": "Requested periodic audit recording",
+          "description": "ON records sampled state changes locally. OFF stops adding samples but keeps existing entries. No microphone audio or network payloads are recorded.",
+          "currentValue": {
+            "path": [
+              "recording"
+            ]
+          }
+        }
+      },
+      "description": "Changes whether Core samples observable metadata about once per minute. Only the last 128 events are kept in RAM; a reboot clears them."
+    },
+    "viewLog": {
+      "title": "View audit log",
+      "readOnly": true,
+      "parameters": {},
+      "description": "Displays retained sampled events. Missing events do not prove inactivity because this is a limited, periodic snapshot log."
+    },
+    "clearLog": {
+      "title": "Clear audit log",
+      "readOnly": false,
+      "parameters": {},
+      "description": "Deletes the retained audit events from RAM. Recording continues afterward if it is enabled.",
+      "confirmation": {
+        "message": "Confirm deleting the stored log entries. This cannot be undone."
+      }
+    }
+  }
+}
