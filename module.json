@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "id": "privacy-audit",
-  "version": "1.0.2",
-  "minCoreVersion": "0.4.6",
+  "version": "1.1.0",
+  "minCoreVersion": "0.8.0",
   "title": "Privacy Audit",
   "description": "On-TV process, microphone-device and network metadata inspection with an optional bounded local event log.",
   "disableDescription": "Stops periodic audit sampling. Existing RAM log entries are kept until cleared or the TV reboots. Privacy and microphone blocks are controlled by their separate modules.",
@@ -78,5 +78,6 @@
         "message": "Confirm deleting the stored log entries. This cannot be undone."
       }
     }
-  }
+  },
+  "updateStrategy": "enable"
 }
